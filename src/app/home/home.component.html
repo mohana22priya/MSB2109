@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>homes works</h1>
+   
+   <div>
+       <h2>name is {{name}}</h2>
+       <h2>number is {{n}}</h2>
+   </div>
+
+   <input type="text" [value]=name>
+   <h1 [innerHTML]=n></h1>
+   <img [src]="imgurl" alt="no img" width="200px" height="200px">
+
+
+<div>
+    <!-- #ref is reference variable to read value of input field-->
+    <input type="text" name="name" id="" #ref>
+    <button (click)="test(ref.value)">click me</button>
+</div>
+<div>
+    <button (click)="inc()">increment</button>
+    <h1>{{counter}}</h1>
+</div>
+
+
+
+
+</body>
+</html>

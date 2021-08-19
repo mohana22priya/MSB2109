@@ -1,0 +1,16 @@
+<p>aboutus works!</p>
+<div>
+    <button class="btn btn-info" (click)="changeStatus()">{{status?"hide":"show"}}</button>
+</div>
+<div>
+    <h1 *ngIf=status>WELCOME BATCH-9 STUDENTS</h1>
+</div>
+
+<ul *ngFor="let v of digits;let i=index">
+    <li>value at index{{i}} is {{v}}</li>
+</ul>
+
+
+<!--Twoway databinding-->
+<input type="text" name="" id="" [(ngModel)]=m>
+{{m}}

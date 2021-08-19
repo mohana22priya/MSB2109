@@ -1,0 +1,19 @@
+<p>nodejs works!</p>
+<table class="table">
+<thead>
+    <th>Id</th>
+    <th>Email</th>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Images</th>
+</thead>
+<tr *ngFor="let img of imagedata">
+    <td>{{img.id}}</td>
+    <td>{{img.email}}</td>
+    <td>{{img.first_name}}</td>
+    <td>{{img.last_name}}</td>
+    <td>
+        <img [src]=img.avatar >
+    </td>
+</tr>
+</table>
